@@ -9,5 +9,6 @@
 # answers document
 Answers.txt
 
-# ignore large folder (task 6)
+# ignore large files / folders
+/task5/peakhell.jpg
 /task6/task6zip/
