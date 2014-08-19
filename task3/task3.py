@@ -1,36 +1,34 @@
-output=''
+# http://www.pythonchallenge.com/pc/def/equality.html
 
-def iscap(l):
-    if l.upper()==l:
-        return True
-    else:
-        return False
+#looking for this pattern:  aAAAaAAAa
 
-uppercount=0
-gooduptolower=False
-targetletter=''
+output = ""
 
-newfile="task3text.txt"
+uppercount = 0
+gooduptolower = False
+targetletter = ""
+
+newfile = "task3text.txt"
 with open(newfile, "r") as newlist:
     for line in newlist:
-        line=line.strip()
+        line = line.strip()
         for char in line:
-            if iscap(char):
-                uppercount=uppercount+1
+            if str.isupper(char):
+                uppercount = uppercount + 1
             else:
-                if uppercount==3:
+                if uppercount == 3:
                     if gooduptolower:
-                        output=output+targetletter
-                        gooduptolower=False
+                        output = output + targetletter
+                        gooduptolower = False
                     else:
-                        targetletter=char
-                        gooduptolower=True
+                        targetletter = char
+                        gooduptolower = True
                 else:
-                    gooduptolower=False
-                    targetletter=''
-                uppercount=0
+                    gooduptolower = False
+                    targetletter = ''
+                uppercount = 0
 
 print output
 
-#aAAAaAAAa
 
+# http://www.pythonchallenge.com/pc/def/linkedlist.html
