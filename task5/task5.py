@@ -1,32 +1,22 @@
-##import pickle
-##import urllib2
-##
-###x=pickle("peak hill")
-##
-##url="http://www.pythonchallenge.com/pc/def/pickle.html"
-##
-##req = urllib2.Request(url)
-##response = urllib2.urlopen(req)
-##text=response.read()
-##
-##print text
-##    
-##with open('task5text.txt', 'w') as textfile:
-##    pickle.dump(url, textfile)
-##
-##with open('task5text.txt', 'r') as filehandler:
-##    y = pickle.load(filehandler)
-##
-##print y
+#  http://www.pythonchallenge.com/pc/def/peak.html
+
 
 import pickle
 
-banner = pickle.load(open('task5text.txt','r'))
-data=[]
-print banner
-for item in banner:
+output = []
+
+with open("banner.p", "r") as banner:
+    unpickle = pickle.load(banner)
+
+print unpickle
+
+data = []
+for item in unpickle:
     for seq in item:
-        data.append(seq[0]*seq[1])
+        data.append(seq[0] * seq[1])
     data.append('\n')
 
 print "".join(data)
+
+
+#  http://www.pythonchallenge.com/pc/def/channel.html
