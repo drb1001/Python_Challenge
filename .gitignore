@@ -1,2 +1,5 @@
 # ignore answers
 Answers.txt
+
+# ignore large folder (task 6)
+task6/task6.zip/
