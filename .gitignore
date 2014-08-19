@@ -1,4 +1,12 @@
-# ignore answers
+### PyCharm ###
+
+## Directory-based project format
+.idea/
+
+## Python combiled files
+*.pyc
+
+# answers document
 Answers.txt
 
 # ignore large folder (task 6)
