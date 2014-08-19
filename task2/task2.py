@@ -24,5 +24,4 @@ with open(newfile, "r") as newlist:
 
 print output
 
-
 # http://www.pythonchallenge.com/pc/def/equality.html
