@@ -10,6 +10,6 @@
 Answers.txt
 
 # ignore large files / folders
-/task5/peakhell.jpg
 /task6/channel/
 /task6/channel.zip
+*.jpg
