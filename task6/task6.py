@@ -34,7 +34,7 @@ for name in myarray:
     zz = z.getinfo(name)
     data = z.read(name)
     comments = comments + zz.comment
-    
+
 z.close()
 
 print comments
