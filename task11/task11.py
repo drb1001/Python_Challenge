@@ -6,7 +6,7 @@ from PIL import Image, ImageOps
 myimage = Image.open('cave.jpg')
 
 mysize = myimage.size
-print mysize
+#  print mysize  # (640, 480)
 
 im1 = Image.new("RGB", (640, 480), 'black')
 pix1 = im1.load()
